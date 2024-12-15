@@ -28,3 +28,5 @@ C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ref
 C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ManageVentory.pdb
 C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ManageVentory.genruntimeconfig.cache
 C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ref\ManageVentory.dll
+C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ManageVentory.RazorAssemblyInfo.cache
+C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ManageVentory.RazorAssemblyInfo.cs

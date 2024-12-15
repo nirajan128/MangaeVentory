@@ -8,18 +8,20 @@ namespace WebApp.Controllers
     {
         /**
          * Usine controller name and addtg the method name: Index would return a tstring
-         * Example webURL/Home/Index would return the string
+         * Example webURL/Home/Index would return the view
          */
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hello world printed from using Action method";
+            return View(); //returns index.cshtml
         }
 
         /**
-         * Example webURL/Home/Error would return the string */
-        public string Error()
+         * Example webURL/Home/Error would return the string
+         * public string Error()
         {
             return "Hello error printed from using Action method";
         }
+        */
+
     }
 }
