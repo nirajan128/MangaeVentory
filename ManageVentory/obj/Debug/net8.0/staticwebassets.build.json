@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "MTSOyMkfSVx0TVkvL54CfN0KrA2ZrWrLqdeOPEe8v0o=",
+  "Source": "ManageVentory",
+  "BasePath": "_content/ManageVentory",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
