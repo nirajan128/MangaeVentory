@@ -28,8 +28,17 @@
     </nav>
 
     <div class="container">
-        <!--Placeholder for view-->
-        @RenderBody()
+        <div class="pb-3">
+            <!--Every page must implement the section
+                if you want to make it optional add false to the parameter
+            -->
+            @RenderSection("title")
+            <hr/>
+        </div>
+        <div>
+            <!--Placeholder for view-->
+            @RenderBody()
+        </div>   
     </div>
     
 </body>
