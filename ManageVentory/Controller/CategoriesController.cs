@@ -6,8 +6,12 @@ namespace WebApp.Controllers
     public class CategoriesController : Controller
     {
         public IActionResult Index()
-        {
-            return View();
+        {   
+            //Gets the categoryData from the model - is a List
+            var categoryData = CategoryRepository.GetCategories();
+
+            //passes the data to view, so view can use the data
+            return View(categoryData);
         }
 
         public IActionResult Edit(int? id) 

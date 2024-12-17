@@ -1,9 +1,16 @@
-﻿
+﻿@using ManageVentory.Models <!-- namespace -->
+
+<!-- Type of data the model is worrking with-->
+@model List<Category> 
+
 @section title{
 	<h3>Categories</h3>
 }
 <!--Uses template from _viewstart which inport template from _layout-->
 	<ul>
-		<li><a href="/categories/edit/1">Meat</a></li>
-		<li><a href="/categories/edit/2">Bevrage</a></li>
+		@foreach(var category in Model){ //Where Model corresponds to @model and it correspons to controller data
+			<li>
+				@category.CategoryId
+			</li>
+		}
 	</ul>
