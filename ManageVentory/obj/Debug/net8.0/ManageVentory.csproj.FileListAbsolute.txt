@@ -30,3 +30,4 @@ C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\Man
 C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ref\ManageVentory.dll
 C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ManageVentory.RazorAssemblyInfo.cache
 C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\obj\Debug\net8.0\ManageVentory.RazorAssemblyInfo.cs
+C:\Users\niraj\OneDrive\Desktop\ManageVentory\ManageVentory\bin\Debug\net8.0\ManageVentory.staticwebassets.runtime.json
