@@ -30,8 +30,16 @@ namespace WebApp.Controllers
         //The parameter Categrory category recives the dat from asp-for which correspond to the current object
         [HttpPost]
         public IActionResult Edit(Category category) {
-          CategoryRepository.UpdateCategory(category.CategoryId, category);
-            return RedirectToAction(nameof(Index));
+            //if  the state of the model(Category object is valid then edit)
+            if (ModelState.IsValid)
+            {
+                CategoryRepository.UpdateCategory(category.CategoryId, category);
+                return RedirectToAction(nameof(Index));
+            }
+
+            //If not dont update the category and shpow the edit page again
+            return View(category);
+    
         }
     }
 }
