@@ -27,6 +27,7 @@ namespace WebApp.Controllers
 
 
         //[httpPost] refers to the what request the contoller is making
+        //The parameter Categrory category recives the dat from asp-for which correspond to the current object
         [HttpPost]
         public IActionResult Edit(Category category) {
           CategoryRepository.UpdateCategory(category.CategoryId, category);

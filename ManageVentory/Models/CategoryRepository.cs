@@ -42,10 +42,10 @@
             if (category.CategoryId != categoryID) return;
 
             //call the GetCategoryById method to create a new instance of the category
-            var categoryToUpdate = GetCategoryById(categoryID);
+            var categoryToUpdate = categories.FirstOrDefault(x => x.CategoryId == categoryID);
 
             //if its not null, update the new insance of catgory with the value of provided category
-            if(categoryToUpdate != null)
+            if (categoryToUpdate != null)
             {
                 categoryToUpdate.Name = category.Name;
                 categoryToUpdate.Description = category.Description;
