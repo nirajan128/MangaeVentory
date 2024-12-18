@@ -24,5 +24,13 @@ namespace WebApp.Controllers
            var category =  CategoryRepository.GetCategoryById(id.HasValue? id.Value : 0);
             return View(category);
         }
+
+
+        //[httpPost] refers to the what request the contoller is making
+        [HttpPost]
+        public IActionResult Edit(Category category) {
+          CategoryRepository.UpdateCategory(category.CategoryId, category);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
