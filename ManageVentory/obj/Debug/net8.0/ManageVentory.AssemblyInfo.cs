@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ManageVentory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26713e907488760464f94e88fecbe29183a2d624")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caeb79e74d51a50af96b6251c2b4190c6dd3ac80")]
 [assembly: System.Reflection.AssemblyProductAttribute("ManageVentory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ManageVentory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
