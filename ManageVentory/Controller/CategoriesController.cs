@@ -14,9 +14,14 @@ namespace WebApp.Controllers
             return View(categoryData);
         }
 
-        public IActionResult Edit(int? id) 
+        //[From Route ] is model binding meaning that it bind where the data it gets from'
+        //In this case it can only get data from routing or clicking the edit button
+
+        //This method gets param from frontend(edit button which condtains a id) and calls getCategoryByID method  which returns
+        // a category object based on the id
+        public IActionResult Edit([FromRoute]int? id) 
         {
-           var category = new Category { CategoryId = id.HasValue? id.Value : 0 };
+           var category =  CategoryRepository.GetCategoryById(id.HasValue? id.Value : 0);
             return View(category);
         }
     }
