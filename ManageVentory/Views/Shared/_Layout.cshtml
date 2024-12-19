@@ -42,6 +42,7 @@
             @RenderBody()
         </div>   
     </div>
-    
+    <!--Section for sjavascripts fle, required set to false cause not all view will use javascript-->
+    @await RenderSectionAsync("Scripts", required:false);
 </body>
 </html>

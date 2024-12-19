@@ -15,6 +15,7 @@
 				<th>Name</th>
 				<th>Description</th>
 				<th></th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -27,10 +28,19 @@
 						asp-action is the actua cshtml page and asp-route is the method parameter in the controller for catgories
 					-->
 					<td><a class="btn btn-link" asp-controller="Categories" asp-action="Edit" asp-route-id="@category.CategoryId">Edit</a></td>
+					<td><a class="btn btn-link" asp-controller="Categories" asp-action="delete" asp-route-categoryId="@category.CategoryId" onclick="return confirmDelete()">Delete</a></td>
 				</tr>
 			}
 		</tbody>
 	</table>
 	<a class="btn btn-primary" asp-controller="Categories" asp-action="Add">Add Category </a>
+}
 
+<!--Adding javascript section-->
+@section Scripts{
+  <script>
+	  function confirmDelete(){
+		  return confirm("Are you sure you want to delte this category?"); //an alert method which returns boolean
+	  }
+  </script>
 }
